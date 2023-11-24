@@ -8,19 +8,21 @@ body {
 }
 
 @media screen and (max-width: 1010px) {
-  
-
-  #right-aside{
+  #right-aside {
     display: none;
   }
 
-  #left-aside{
+  #left-aside {
     display: none;
   }
 }
 
 /*Header css starts from here*/
 .main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   border-bottom: 1px solid #00000014;
   background-color: white;
 
@@ -122,27 +124,25 @@ body {
 
 /*Main Cntainer css starts from here*/
 main {
-  width: 100vw;
-  background-color: #f3f2ef ;
-  
+  background-color: #f3f2ef;
+
   display: flex;
   justify-content: center;
   gap: 24px;
   position: relative;
-  margin-top: 18px;
+  margin-top: 60px;
 }
 
 /*left aside code starts from here*/
 .left-aside {
-  
   width: 225px;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-.top{
+.top {
   background-color: white;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
 .cover {
@@ -237,95 +237,90 @@ main {
   margin-left: 8px;
 }
 
-.bottom{
+.bottom {
   padding: 0 12px 12px 12px;
   font-size: 1rem;
-  font-family: 'Roboto';
-  border: 1px solid rgba(0,0,0,0.1);
+  font-family: "Roboto";
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   background-color: white;
   position: sticky;
-  top: 18px;
-  
+  top: 60px;
 }
-.events{
+.events {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.bottom a{
+.bottom a {
   text-decoration: none;
   color: blue;
 }
-.bottom-child{
+.bottom-child {
   padding: 8px;
   color: blue;
 }
 
-.discover{
+.discover {
   text-align: center;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 12px 12px 0px 12px;
 }
-.discover a{
+.discover a {
   font-size: 1.2rem;
   font-weight: bold;
   color: gray;
-
 }
 
 /*Main container code*/
 
-.main-center{
+.main-center {
   width: 45%;
   background-color: white;
   border-radius: 12px;
 }
 
-.img-container{
+.img-container {
   width: 48px;
   height: 48px;
   overflow: hidden;
   border-radius: 50%;
-  
 }
-.img-container img{
+.img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.search-div{
-  border: 1px solid rgba(0,0,0,0.1);
+.search-div {
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
-.search-bar-container{
+.search-bar-container {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 12px 8px 0px 8px;
 }
-.start-post{
+.start-post {
   display: flex;
   flex-grow: 1;
 }
-.start-post input{
+.start-post input {
   border: none;
   outline: none;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   height: 45px;
   border-radius: 25px;
   padding: 0px 12px;
   flex-grow: 1;
-
 }
-.start-post input:hover{
+.start-post input:hover {
   cursor: pointer;
   background-color: #f3f2ef;
-
 }
 
-.media-container{
+.media-container {
   margin-top: 8px;
   display: flex;
   align-items: center;
@@ -333,68 +328,65 @@ main {
   margin-bottom: 4px;
 }
 
-.media-card{
+.media-card {
   padding: 12px 16px;
   display: flex;
   align-items: center;
   background-color: white;
   border-style: none;
 }
-.media-card:hover{
+.media-card:hover {
   cursor: pointer;
   background-color: #f3f2ef;
   border-radius: 4px;
 }
-.media-card span{
+.media-card span {
   margin-left: 4px;
 }
 
-
-.post{
- 
+.post {
   margin-top: 12px;
   font-size: 1rem;
   width: 100%;
-  
-  font-family: 'Roboto';
+
+  font-family: "Roboto";
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.post-head{
+.post-head {
   display: flex;
   padding: 10px 10px 0px 10px;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-.post-left{
+.post-left {
   display: flex;
 }
 
-.post-details{
+.post-details {
   margin-left: 8px;
   display: flex;
   flex-direction: column;
 }
 
-.title-time{
+.title-time {
   display: flex;
   align-items: center;
 }
 
-.post-time{
+.post-time {
   margin-right: 4px;
 }
 
-.post-right{
+.post-right {
   display: flex;
   gap: 8px;
 }
 
-.more{
+.more {
   height: 30px;
   width: 30px;
   display: flex;
@@ -404,10 +396,10 @@ main {
   cursor: pointer;
 }
 
-.more:hover{
+.more:hover {
   background-color: #f3f2ef;
 }
-.cancel{
+.cancel {
   height: 30px;
   width: 30px;
   display: flex;
@@ -416,50 +408,49 @@ main {
   border-radius: 50%;
   cursor: pointer;
 }
-.cancel:hover{
+.cancel:hover {
   background-color: #f3f2ef;
 }
 
-.p-title{
+.p-title {
   margin-top: 4px;
   padding: 8px;
   font-size: 1rem;
 }
 
-.post-img img{
+.post-img img {
   width: 100%;
 }
 
-.like-left{
+.like-left {
   display: flex;
   align-items: center;
   padding: 3px 0px;
 }
-.like-left img{
-  height: 22px; 
+.like-left img {
+  height: 22px;
 }
 
-.like{
+.like {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 8px;
 }
 
-.like a{
+.like a {
   color: gray;
 }
 
-.social{
+.social {
   margin-top: 8px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 4px;
-  
 }
 
-.social-icons{
+.social-icons {
   padding: 8px 16px;
   display: flex;
   align-items: center;
@@ -468,136 +459,129 @@ main {
   color: gray;
 }
 
-.social-icons span{
+.social-icons span {
   margin-left: 4px;
 }
 
-.social-icons:hover{
+.social-icons:hover {
   cursor: pointer;
   background-color: #f3f2ef;
   border-radius: 4px;
 }
 
-.post{
-  
+.post {
 }
-.post-container{
-  border: 1px solid rgba(0,0,0,0.2);
+.post-container {
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 12px;
 }
 
-.right-aside{
+.right-aside {
   width: 300px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.linkedin-news{
-  border: 1px solid rgba(0,0,0,0.1);
+.linkedin-news {
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: white;
   border-radius: 12px;
 }
 
-
-.right-aside{
-  font-family: 'Roboto';
+.right-aside {
+  font-family: "Roboto";
 }
 
-.news-title{
+.news-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 4px 12px;
   font-size: 1.3rem;
   font-weight: bold;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   padding-top: 12px;
 }
 
-
-.news-item{
+.news-item {
   margin-top: 8px;
-  
 }
 
-.news-item a{
+.news-item a {
   text-decoration: none;
   cursor: pointer;
 }
 
-.news-item:hover{
+.news-item:hover {
   background-color: #eef3f8;
 }
 
-
-.news-item span{
-  font-family: 'Roboto';
-  color: rgba(0,0,0,0.8);
+.news-item span {
+  font-family: "Roboto";
+  color: rgba(0, 0, 0, 0.8);
 }
 
-.news-heading{
+.news-heading {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.reader{
+.reader {
   font-size: 0.9rem;
 }
 
-.news-list{
+.news-list {
   list-style: none;
   padding: 0;
   padding-left: 30px;
 }
-.dot{
+.dot {
   height: 6px;
   width: 6px;
   background-color: gray;
   border-radius: 50%;
 }
 
-.show-more{
+.show-more {
   padding-left: 30px;
   font-weight: bold;
-  color: rgba(0,0,0,0.8);
-font-size: 1.1rem;
-padding-bottom: 18px;
-cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.1rem;
+  padding-bottom: 18px;
+  cursor: pointer;
 }
 
-.show{
+.show {
   display: flex;
   align-items: center;
   padding: 2px 4px;
-  gap:4px
-  box
+  gap: 4px box;
 }
 
-.show:hover{
+.show:hover {
   background-color: #eef3f8;
 }
 
-.show-m:hover{
+.show-m:hover {
   background-color: #eef3f8;
 }
 
-.ads{
-  font-family: 'Roboto';
+.ads {
+  font-family: "Roboto";
   width: 100%;
-  border: 1px solid rgba(0,0,0,0.1);
-  
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
   background-color: white;
   border-radius: 12px;
-  
 }
 
-.ad-container{
+.ad-container {
   display: flex;
   justify-content: flex-end;
 }
 
-.ad-container-child{
+.ad-container-child {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -605,32 +589,29 @@ cursor: pointer;
   padding-right: 8px;
 }
 
-.ad-text{
+.ad-text {
   margin-top: 12px;
   text-align: center;
   padding: 0px 12px;
-  color:rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
   font-size: 1.1rem;
 }
 
-.ad-profile{
+.ad-profile {
   height: 60px;
   width: 60px;
   overflow: hidden;
   border-radius: 50%;
 }
 
-.ad-profile img{
-  
+.ad-profile img {
   width: 100%;
-  
 }
-.ad-logo img{
+.ad-logo img {
   height: 60px;
   width: 60px;
-
 }
-.ad-img{
+.ad-img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -638,7 +619,7 @@ cursor: pointer;
   margin-top: 12px;
 }
 
-.try-free-container{
+.try-free-container {
   margin-top: 12px;
   margin-bottom: 12px;
   display: flex;
@@ -646,40 +627,40 @@ cursor: pointer;
   justify-content: center;
 }
 
-.try{
+.try {
   padding: 12px 24px;
   border: 1px solid #0073b1;
   border-radius: 24px;
 }
 
-.ads:hover{
+.ads:hover {
   cursor: pointer;
 }
 
-.list{
+.list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   padding: 0px 12px;
 }
 
-.list li a{
+.list li a {
   margin: 12px 8px;
   text-decoration: none;
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
-.right-bottom{
+.right-bottom {
   position: sticky;
-  top: 18px;
+  top: 60px;
 }
 
-.linkedin-corporation{
+.linkedin-corporation {
   padding: 0px 22px;
 }
 
-.messaging{
-  font-family: 'Roboto';
+.messaging {
+  font-family: "Roboto";
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -687,33 +668,31 @@ cursor: pointer;
   height: 40px;
   padding: 0px 22px;
   border-top-left-radius: 12px;
-  border-top-right-radius:12px;
+  border-top-right-radius: 12px;
   position: fixed;
   bottom: 0px;
   right: 45px;
 }
 
-.message-img{
+.message-img {
   height: 28px;
   width: 28px;
   overflow: hidden;
   border-radius: 50%;
-
 }
 
-.message-img img{
+.message-img img {
   width: 100%;
-object-fit: contain;
+  object-fit: contain;
 }
 
-
-.message-left{
+.message-left {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-.message-right{
+.message-right {
   display: flex;
   align-items: center;
   gap: 8px;
